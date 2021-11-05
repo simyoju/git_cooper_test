@@ -13,6 +13,8 @@ class FirstViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        nameLabel.text = "청주"
         // Do any additional setup after loading the view.
     }
 
