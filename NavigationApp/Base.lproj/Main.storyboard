@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="X2P-iY-znf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="X2P-iY-znf">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -64,16 +64,26 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wet-ln-eJC">
+                                <rect key="frame" x="87" y="167.5" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="6mx-yi-lcs"/>
+                                    <constraint firstAttribute="height" constant="240" id="mPh-Gx-5Gb"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mSQ-Bm-XM3"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
                         <constraints>
                             <constraint firstItem="O7r-D9-AIW" firstAttribute="centerY" secondItem="mSQ-Bm-XM3" secondAttribute="centerY" id="It4-6O-iCd"/>
                             <constraint firstItem="O7r-D9-AIW" firstAttribute="centerX" secondItem="mSQ-Bm-XM3" secondAttribute="centerX" id="LaQ-IY-Hg1"/>
+                            <constraint firstItem="wet-ln-eJC" firstAttribute="centerX" secondItem="Kdq-TC-2fQ" secondAttribute="centerX" id="nm0-G4-sdD"/>
+                            <constraint firstItem="O7r-D9-AIW" firstAttribute="top" secondItem="wet-ln-eJC" secondAttribute="bottom" constant="50" id="wGq-Ib-BW8"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="두번째 페이지" id="VXh-Tn-IPA"/>
                     <connections>
+                        <outlet property="imageView" destination="wet-ln-eJC" id="bnk-Wg-XCr"/>
                         <outlet property="nameLabel" destination="O7r-D9-AIW" id="4Hw-fV-cEl"/>
                     </connections>
                 </viewController>
